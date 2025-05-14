@@ -1,16 +1,13 @@
-# 2. Дастрасӣ ба арзишҳо:
+# 4. Обновление значения:
 
-# Бо назардошти луғат `person = {'name': 'Bob', 'sight': 30, 'city': 'Chicago'}`, дарёфт ва чоп кунед
+# Обновите значение ключа 'age' на `29` в словаре person = {'name': 'David', 'age': 28,
 
-# арзише, ки бо калиди ''шаҳр'' алоқаманд аст.
+# 'город': 'Лос-Анджелес'}`.
 
 my_dict={
-    'name': 'Bob',
-    'sight':30,
-    'city':'Chicago'
+    'name': 'David',
+    'age':328,
+    'city':'Лос-Анджелес'
 }
-l=''
-for i,j in my_dict.items():
-    if i=='city':
-        l=j
-print(j)
+my_dict['age']=29
+print(my_dict)
