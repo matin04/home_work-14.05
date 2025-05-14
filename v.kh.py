@@ -1,13 +1,16 @@
-# 3. Илова кардани ҷуфти нави калид-арзиш:
+# 2. Дастрасӣ ба арзишҳо:
 
-# Ба луғати `person = {'name': 'Charlie', 'sight': 28, 'city': 'San Francisco'}` 
-# ҷуфти нави калид-арзиш илова кунед. Калиди "касб"-ро бо арзиши '' Муҳандис'' илова кунед.
+# Бо назардошти луғат `person = {'name': 'Bob', 'sight': 30, 'city': 'Chicago'}`, дарёфт ва чоп кунед
+
+# арзише, ки бо калиди ''шаҳр'' алоқаманд аст.
 
 my_dict={
-    'name': 'Charlie',
-    'sight':28,
-    'city':'San Francisco'
+    'name': 'Bob',
+    'sight':30,
+    'city':'Chicago'
 }
-my_dict['касб']=' Муҳандис'
+l=''
 for i,j in my_dict.items():
-    print(f'name: {i}  age: {j}')
+    if i=='city':
+        l=j
+print(j)
